@@ -27,7 +27,7 @@ functionalities:
 8. 'Leaderboard.html' page contains 5 buttons('home','enter_marks','sort by name','sort by roll number','sort by rank').
 -->'home' button redirects to homepage.
 -->'leaderboard' button redirects to leaderboard page.
--->'sort by name' button is used for sorting student details according to  alphabeticals order.
+-->'sort by name' button is used for sorting student details according to  alphabetical order.
 -->'sort by roll number' button is used for sorting student details according to roll numbers.
 -->'sort by rank' button is used for sorting student details according to their average.
 
