@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<style>
+  body {
+        font-family: Bookman old Style;
+        background-color:white;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 16px;
+        background-color: white;
+        width:920px;
+        border:2px solid black;
+        border-radius:20px;
+        margin-left:10px;
+    }
+
+    input[type=number], input[type=text] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        font-size:20px;
+    }
+
+    input[type=number]:focus, input[type=text]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    .submit {
+        background-color: black;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        opacity: 0.9;
+    }
+
+    .submit:hover {
+        opacity: 1;
+    }
+
+    .card {
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         transition: 0.3s;
+         width:1000px;
+         height:900px;
+         float:right;
+         margin-right:250px;
+         margin-top:70px;
+         border-radius: 12%;
+         background-color:#DAF7A6;
+     }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+    .container1 {
+        padding: 45px 28px;
+        }
+
+
+    .button {
+         background-color:#222831;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        font-family:times new roman;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        margin-left:30px;
+    }
+
+    .css{
+        margin-left:900px;
+    }
+
+    .header{
+        background-color:#bedcfa;
+        height:225px;
+        border:3px solid black;
+        border-radius:30px;
+    }
+
+    .img1{
+	    float:left;
+	    width:150px;
+	    height:120px;
+	    margin-top:0px;
+	    margin-left:10px;
+    }
+
+    .heading{
+        font-size:50px;
+        margin-left:170px;
+    }
+
+    .marq {
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    .marq1{
+        font-size:30px;
+        font-weight:bold;
+        color:black;
+        padding-bottom:5px;
+        color:white;
+    }
+
+    img{
+        float:left;
+        width:80px;
+        height:80px;
+        margin-left:300px;
+    }
+
+    .img2{
+        float:left;
+        width:50px;
+        height:50px;
+        margin-left:300px;
+        margin-top:7px;
+    }
+</style>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+</head>
+<body>
+<div class="header">
+
+<br><br>
+        <img src="static/images/logo.png" class="img1">
+        <h1 class="heading">Student Management System</h1>
+
+    <div class="css">
+        <a href="/"><button class="button">Home</button></a>
+        <a href="Leaderboard"><button class="button">Leaderboard</button></a>
+        <a href="/EnterMarks"><button class="button">Enter Marks</button></a>
+    </div>
+</div>
+
+<br>
+
+<!-------------------------------------------------------------------------------------------------------------------->
+
+<marquee class="marq" bgcolor = "black" direction = "left" loop="" >
+    <div class="marq1">Note: "Please enter correct Roll Number to update your marks."</div>
+</marquee>
+
+<br>
+<!--------------------------------------------------------------------------------------------------------------------->
+<div class="card">
+    <div class="container1">
+
+        <form action="updated_details" method="post">
+            <div class="container">
+                <img src="static/images/form-logo.jpg">
+                <h1>Fill the Details</h1>
+                <hr>
+                     <label><h2>Roll Number</h2></label>
+                     <input type="number" placeholder="Enter Roll Number" name="roll" min="0" required>
+
+                    <label><h2>Marks in Mathematics : </h2></label>
+                    <input type="number" placeholder="Enter marks" name="maths" min="0" max="100" required>
+
+                    <label><h2>Marks in Physics : </h2></label>
+                    <input type="number" placeholder="Enter marks" name="physics" min="0" max="100" required>
+
+                    <label><h2>Marks in Chemistry : </h2></label>
+                    <input type="number" placeholder="Enter marks" name="chemistry" min="0" max="100" required>
+
+             <hr>
+                    <img src="static/images/submit.png" class="img2">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>
